@@ -11,6 +11,17 @@ public class Main {
         float totalWindowArea = 0;
         float totalPlugArea = 0;
 
+        System.out.println("What colours are you going to be using to paint the walls with? (please list each colour seperated by a comma)");
+
+        String stringColours = myScanner.next();
+        String[] colourList = stringColours.split(",");
+        /*String[] colours = new String[noOfColours];
+        System.out.println("You are going to be painting with " + noOfColours + " colour(s)");
+*/
+        for (int j = 0; j < colourList.length; j++){
+            System.out.println(colourList[j]);
+        }
+
         for (int i = 0; i < noOfWalls; i++) {
             int wallNo = i + 1;
             System.out.println("This is wall number " + wallNo);
